@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --color-primary: #ff5722;
+  --color--secondary-light: #ffa589;
+  --color--secondary-dark: #ff7a50;
+  --color-navbar: #f8f8f8;
+  --color-headings: #000;
+  --color-white: #fff;
+  --color-body: #333333;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-body);
+  font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn--secondary {
+  background-color: var(--color--secondary-dark);
+  color: var(--color-white);
+}
+
+.btn-block {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+  .btn-block {
+    font-size: 2rem;
+  }
+}
