@@ -6,9 +6,174 @@
     <title>tapsi Demo</title>
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
 
   <body>
+    <header class="main-header">
+      <nav class="nav container">
+        <a href="#">
+          <img src="assets/images/logo.svg" alt="" />
+        </a>
+        <div class="nav__toggler">
+          <div class="bar bar-one"></div>
+          <div class="bar bar-two"></div>
+          <div class="bar bar-three"></div>
+        </div>
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="">پشتیبانی</a></li>
+          <li class="nav__item"><a href="">خدمات کسب و کارها</a></li>
+          <li class="nav__item"><a href="">فرصت های شغلی</a></li>
+          <li class="nav__item"><a href="">وبلاگ</a></li>
+          <li class="nav__item cta">
+            <a href="#" class="btn btn--primary btn-block">دانلود تپسی</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <picture>
+        <source
+          srcset="assets/images/banner.jpg"
+          type="image/webp"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="assets/images/banner.jpg"
+          type="image/jpg"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="assets/images/banner-mobile.jpg"
+          type="image/webp"
+          media="(max-width: 768px)"
+        />
+        <source
+          srcset="assets/images/banner-mobile.jpg"
+          type="image/jpg"
+          media="(max-width: 768px)"
+        />
+        <img alt="banner" src="assets/images/banner.jpg" class="banner-img" />
+      </picture>
+      <div class="hero-wrapper container">
+        <div class="intro-btn">
+          <h1>تپسی</h1>
+          <h2>اپلیکیشن درخواست خودرو و پیک</h2>
+          <div class="intro-wrapper">
+            <div class="intro-btn__passenger">
+              <span class="icon">
+                <i class="fas fa-car"></i>
+              </span>
+              <p>دانلود اپلیکیشن موبایل</p>
+            </div>
+            <div class="intro-btn__passenger">دانلود اپلیکیشن مسافران</div>
+            <div class="intro-btn__passenger">دانلود اپلیکیشن مسافران</div>
+            <div class="intro-btn__passenger">دانلود اپلیکیشن مسافران</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services container" style="margin-top: 50vh">
+      <h2 aria-label="services section title" class="title">
+        سرویس&zwnj;های تپسی
+      </h2>
+      <div class="services__tabs">
+        <a class="tab active" data-tab-target="nav-classic-tab">
+          <img
+            src="assets/images/cc-plus.png"
+            aria-label="classic service icon"
+            alt="tapsi-classic-icon"
+          />
+          <p>تپسی کلاسیک</p>
+        </a>
+        <a class="tab" data-tab-target="nav-tel-tab">
+          <img
+            src="assets/images/cc-plus.png"
+            aria-label="tel service icon"
+            alt="tapsi-tel-icon"
+          />
+          <p>تپسی تلفنی</p>
+        </a>
+        <a class="tab" data-tab-target="nav-line-tab">
+          <img
+            src="assets/images/cc-plus.png"
+            aria-label="line service icon"
+            alt="tapsi-line-icon"
+          />
+          <p>تپسی لاین</p>
+        </a>
+        <a class="tab" data-tab-target="nav-motopeyk-tab">
+          <img
+            src="assets/images/cc-plus.png"
+            aria-label="motopeyk service icon"
+            alt="motopeyk-icon"
+          />
+          <p>موتوپیک</p>
+        </a>
+      </div>
+      <div class="container">
+        <div class="tab-content active" id="nav-classic-tab">
+          <div class="feature__img">
+            <img src="assets/images/illus-motopeyk.webp" alt="" />
+          </div>
+          <div class="feature__detail">
+            <h3 class="feature__title">خدمات تپسی برای کسب و</h3>
+            <p class="feature__text">
+              نامز‌مه تساوخرد ناکما یگداس هب هک تسا بو تحت هناماس کی ،یسپت
+              ینامزاس لنپ اب و .دنک‌یم مهارف اه‌نامزاس و اهراکو‌بسک یارب ار کیپ
+              و وردوخ یدودحمان دادعت یگداس هب ار دوخ یاهالاک لاسرا و یرهش‌نورد
+              یاه تیرومام دیناوت‌یم نآ زا هدافتسا .دینک تیریدم
+            </p>
+          </div>
+        </div>
+        <div class="tab-content" id="nav-tel-tab">
+          <div class="feature__img">
+            <img src="assets/images/illus-motopeyk.webp" alt="" />
+          </div>
+          <div class="feature__detail">
+            <h3 class="feature__title">خدمات تپسی برای و کارها</h3>
+            <p class="feature__text">
+              نامز‌مه تساوخرد ناکما یگداس هب هک تسا بو تحت هناماس کی ،یسپت
+              ینامزاس لنپ اب و .دنک‌یم مهارف اه‌نامزاس و اهراکو‌بسک یارب ار کیپ
+              و وردوخ یدودحمان دادعت یگداس هب ار دوخ یاهالاک لاسرا و یرهش‌نورد
+              یاه تیرومام دیناوت‌یم نآ زا هدافتسا .دینک تیریدم
+            </p>
+          </div>
+        </div>
+        <div class="tab-content" id="nav-line-tab">
+          <div class="feature__img">
+            <img src="assets/images/illus-motopeyk.webp" alt="" />
+          </div>
+          <div class="feature__detail">
+            <h3 class="feature__title">خدمات برای کسب و کارها</h3>
+            <p class="feature__text">
+              نامز‌مه تساوخرد ناکما یگداس هب هک تسا بو تحت هناماس کی ،یسپت
+              ینامزاس لنپ اب و .دنک‌یم مهارف اه‌نامزاس و اهراکو‌بسک یارب ار کیپ
+              و وردوخ یدودحمان دادعت یگداس هب ار دوخ یاهالاک لاسرا و یرهش‌نورد
+              یاه تیرومام دیناوت‌یم نآ زا هدافتسا .دینک تیریدم
+            </p>
+          </div>
+        </div>
+        <div class="tab-content" id="nav-motopeyk-tab">
+          <div class="feature__img">
+            <img src="assets/images/illus-motopeyk.webp" alt="" />
+          </div>
+          <div class="feature__detail">
+            <h3 class="feature__title">تپسی برای کسب و کارها</h3>
+            <p class="feature__text">
+              نامز‌مه تساوخرد ناکما یگداس هب هک تسا بو تحت هناماس کی ،یسپت
+              ینامزاس لنپ اب و .دنک‌یم مهارف اه‌نامزاس و اهراکو‌بسک یارب ار کیپ
+              و وردوخ یدودحمان دادعت یگداس هب ار دوخ یاهالاک لاسرا و یرهش‌نورد
+              یاه تیرومام دیناوت‌یم نآ زا هدافتسا .دینک تیریدم
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="feature container">
       <div class="feature__img">
         <img src="assets/images/i-mac-1.png" alt="" />
@@ -169,5 +334,56 @@
         </div>
       </div>
     </section>
+    <footer class="main-footer">
+      <div class="container footer">
+        <div class="footer__item">
+          <h6>تپسی</h6>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+        </div>
+        <div class="footer__item">
+          <h6>تپسی</h6>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+        </div>
+        <div class="footer__item">
+          <h6>تپسی</h6>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+        </div>
+        <div class="footer__item">
+          <h6>تپسی</h6>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+        </div>
+        <div class="footer__item">
+          <h6>تپسی</h6>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+          <a href="">وبلاگ تپسی</a>
+        </div>
+        <div class="footer__item enemad">
+          <div class="footer__enemad">
+            <img src="/assets/images/enemad.png" alt="" />
+          </div>
+          <div class="footer__enemad">
+            <img src="/assets/images/enemad.png" alt="" />
+          </div>
+          <div class="footer__enemad">
+            <img src="/assets/images/enemad.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="js/main.js"></script>
 </html>
